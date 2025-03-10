@@ -26,70 +26,85 @@ print('The area of the circunference is:', area)
 circunference= (2*pi*radio)
 print('The circunference of the circle is', circunference)
 
+slope = 2 
+y_intercept = -2 
+x_intercept = 1  
 
-radius = float(input("Introduce el radio del círculo: "))
-pi = 3.14
-area = pi * radius * radius
-circumference = 2 * pi * radius
-
-print(f"Área del círculo: {area}")
-print(f"Circunferencia del círculo: {circumference}")
-
-
-m = 2  
-b = -2 
-x_intercept = -b / m  
-
-print(f"Pendiente (m): {m}")
-print(f"Intersección en x: {x_intercept}")
-print(f"Intersección en y: {b}")
+print("Pendiente:", slope)
+print("Intersección en y:", y_intercept)
+print("Intersección en x:", x_intercept)
+import math
 
 
 x1, y1 = 2, 2
 x2, y2 = 6, 10
 
 slope = (y2 - y1) / (x2 - x1)
-euclidean_distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
-print(f"Pendiente entre los puntos (2, 2) y (6, 10): {slope}")
-print(f"Distancia euclidiana entre los puntos (2, 2) y (6, 10): {euclidean_distance}")
+distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
+print("Pendiente:", slope)
+print("Distancia euclidiana:", distance)
 
-print(f"La pendiente de la ecuación y = 2x - 2 es {m} y la pendiente entre los puntos es {slope}.")
+print("Las pendientes son iguales:", slope == 2)
 
-
-x_values = [-5, -4, -3, -2, -1, 0, 1, 2, 3]
-for x in x_values:
+for x in range(-5, 3):  
     y = x**2 + 6*x + 9
     print(f"Para x = {x}, y = {y}")
 
+x_when_y_zero = -3
+print("x cuando y es 0:", x_when_y_zero)
+len_python = len('python')
+len_dragon = len('dragon')
 
-length_python = len('python')
-length_dragon = len('dragon')
-print(f"Longitud de 'python': {length_python}, Longitud de 'dragon': {length_dragon}")
-print(f"¿La longitud de 'python' es igual a la de 'dragon'? {length_python == length_dragon}")
+print("Longitud de 'python':", len_python)
+print("Longitud de 'dragon':", len_dragon)
+print("¿Son iguales las longitudes?", len_python == len_dragon)
 
-
-print(f"'on' está en 'python' y 'dragon'? {'on' in 'python' and 'on' in 'dragon'}")
-
+found_in_both = 'on' in 'python' and 'on' in 'dragon'
+print("¿Está 'on' en ambas palabras?", found_in_both)
 
 sentence = "I hope this course is not full of jargon."
-print(f"'jargon' está en la frase? {'jargon' in sentence}")
+contains_jargon = 'jargon' in sentence
+print("¿Está 'jargon' en la oración?", contains_jargon)
 
-print(f"No hay 'on' en ambas palabras? {'on' not in 'dragon' and 'on' not in 'python'}")
+length_python = len('python')
+float_length = float(length_python)
+str_length = str(float_length)
 
-
-length_python_float = float(length_python)
-length_python_str = str(length_python_float)
-print(f"Longitud de 'python' como float: {length_python_float}, como string: {length_python_str}")
+print("Longitud de 'python' como float:", float_length)
+print("Longitud de 'python' como string:", str_length)
 
 def is_even(num):
     return num % 2 == 0
 
-number_to_check = 4 
-print(f"¿{number_to_check} es par? {is_even(number_to_check)}")
+print("¿Es 4 par?", is_even(4))
+print("¿Es 5 par?", is_even(5))
+
+floor_division_check = (7 // 3) == int(2.7)
+print("¿Es la división entera de 7 entre 3 igual a int(2.7)?", floor_division_check)
 
 
-print(f"¿La división entera de 7 por 3 es igual a int(2.7)? {7 // 3 == int(2.7)}")
+type_check = type('10') == type(10)
+print("¿El tipo de '10' es igual al tipo de 10?", type_check)
 
-print(f"¿El tipo de '10' es igual al tipo de 10? {type('10') == type(10)}")
+
+int_check = int(float('9.8')) == 10
+print("¿int('9.8') es igual a 10?", int_check)
+
+horas = float(input("Ingresa las horas: "))
+tasa_por_hora = float(input("Ingresa la tasa por hora: "))
+pago_semanal = horas * tasa_por_hora
+print("Tu ganancia semanal es:", pago_semanal)
+
+años_vividos = int(input("Ingresa el número de años que has vivido: "))
+
+segundos_vividos = años_vividos * 365 * 24 * 60 * 60  
+
+print("Has vivido", segundos_vividos, "segundos.")
+
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
