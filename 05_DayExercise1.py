@@ -14,7 +14,7 @@ last_item = my_list[-1]
 print(first_item, middle_item, last_item)  
 
 
-mixed_data_types = ["Juan", 19, 163, "Single", "123 Main St"]
+mixed_data_types = ["Aldo", 18, 163, "Single", "123 Main St"]
 print(mixed_data_types)  
 
 

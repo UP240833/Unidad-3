@@ -2,8 +2,8 @@
 empty_tuple = ()
 
 # 2. Crear una tupla de hermanos y hermanas
-brothers = ('John', 'Mike')
-sisters = ('Anna', 'Emma')
+brothers = ('Daniel', 'Alejandro')
+sisters = ('Anna', 'Jaqueline')
 
 # 3. Unir las tuplas de hermanos y hermanas
 siblings = brothers + sisters
@@ -12,8 +12,8 @@ siblings = brothers + sisters
 number_of_siblings = len(siblings)
 
 # 5. Modificar la tupla de hermanos para agregar padres
-father = 'Robert'
-mother = 'Linda'
+father = 'Alberto'
+mother = 'Claudia'
 family_members = siblings + (father, mother)
 
 # 1. Desempaquetar hermanos y padres de los miembros de la familia
